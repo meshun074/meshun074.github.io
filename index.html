@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Eshun | Software Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: white;
+      padding: 80px 0;
+    }
+    .section-title {
+      margin-bottom: 40px;
+    }
+    .badge-skill {
+      margin: 4px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Welcome to My Portfolio</h1>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Michael Eshun</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Software Developer</h1>
+    <p class="lead mt-3">
+      Backend & Full-Stack Developer | MSc Computer Science
+    </p>
+    <p>
+      Java • Python • C# • REST APIs • Databases • Cloud
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a Master’s-level Computer Science graduate with hands-on experience
+      building backend and full-stack applications. My background spans academic
+      research, teaching, and real-world software development, with a strong
+      focus on clean architecture, database-driven systems, and scalable backend
+      solutions.
+    </p>
+    <p>
+      I enjoy translating requirements into reliable systems, collaborating with
+      cross-functional teams, and continuously learning new technologies to
+      deliver real value.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <h5>Programming Languages</h5>
+    <span class="badge bg-primary badge-skill">Java</span>
+    <span class="badge bg-primary badge-skill">Python</span>
+    <span class="badge bg-primary badge-skill">C#</span>
+    <span class="badge bg-primary badge-skill">PHP</span>
+    <span class="badge bg-primary badge-skill">C++</span>
+
+    <h5 class="mt-4">Web & Backend</h5>
+    <span class="badge bg-secondary badge-skill">HTML</span>
+    <span class="badge bg-secondary badge-skill">CSS</span>
+    <span class="badge bg-secondary badge-skill">JavaScript</span>
+    <span class="badge bg-secondary badge-skill">jQuery</span>
+    <span class="badge bg-secondary badge-skill">REST APIs</span>
+
+    <h5 class="mt-4">Frameworks & Tools</h5>
+    <span class="badge bg-success badge-skill">Spring Boot</span>
+    <span class="badge bg-success badge-skill">Django</span>
+    <span class="badge bg-success badge-skill">Git</span>
+    <span class="badge bg-success badge-skill">Docker</span>
+    <span class="badge bg-success badge-skill">CI/CD</span>
+    <span class="badge bg-success badge-skill">Agile</span>
+
+    <h5 class="mt-4">Databases & Cloud</h5>
+    <span class="badge bg-warning text-dark badge-skill">MySQL</span>
+    <span class="badge bg-warning text-dark badge-skill">SQL Server</span>
+    <span class="badge bg-warning text-dark badge-skill">AWS</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="mb-4">
+      <h5>Teaching & Research Assistant</h5>
+      <p class="text-muted">
+        Brock University — St. Catharines, ON | Sep 2023 – Present
+      </p>
+      <ul>
+        <li>Developed and optimized Java-based algorithms for routing and scheduling research.</li>
+        <li>Facilitated labs in databases and big data programming.</li>
+        <li>Collaborated with faculty and students through code reviews and debugging sessions.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>Software Engineer</h5>
+      <p class="text-muted">
+        St. Louis Self-Reliance Project — Ghana | Mar 2023 – Sep 2023
+      </p>
+      <ul>
+        <li>Designed and built a POS and inventory management system using PHP and MySQL.</li>
+        <li>Implemented authentication, reporting dashboards, and stock tracking.</li>
+        <li>Worked directly with users to gather requirements and train staff.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Teaching & Research Assistant</h5>
+      <p class="text-muted">
+        KNUST — Ghana | Oct 2021 – Aug 2023
+      </p>
+      <ul>
+        <li>Built Python scripts for sentiment analysis using social media data.</li>
+        <li>Taught Ubuntu shell scripting and task automation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="mb-4">
+      <h5>Home Healthcare Routing & Scheduling System</h5>
+      <p>
+        Java-based Genetic Algorithm solution optimizing routing and scheduling.
+        Focused on modular design, performance optimization, and testing.
+      </p>
+    </div>
+
+    <div>
+      <h5>Digital Twin Smart Home Simulator</h5>
+      <p>
+        3D smart home simulation built using Unity, C#, and Blender with interactive
+        UI and simulation logic.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <p>
+      <strong>MSc Computer Science</strong> — Brock University (2023 – 2025)
+    </p>
+    <p>
+      <strong>BSc Computer Science</strong> — KNUST (2017 – 2021)
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Michael Eshun | Software Developer</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
